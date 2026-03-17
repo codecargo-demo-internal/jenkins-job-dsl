@@ -26,6 +26,9 @@ pipelineJob('Platform/Web/web-app-ci') {
             strategy {
                 logRotator {
                     numToKeepStr('20')
+                    daysToKeepStr('')
+                    artifactNumToKeepStr('')
+                    artifactDaysToKeepStr('')
                 }
             }
         }

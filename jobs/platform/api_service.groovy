@@ -27,6 +27,8 @@ pipelineJob('Platform/API/api-service-ci') {
                 logRotator {
                     numToKeepStr('20')
                     daysToKeepStr('30')
+                    artifactNumToKeepStr('')
+                    artifactDaysToKeepStr('')
                 }
             }
         }

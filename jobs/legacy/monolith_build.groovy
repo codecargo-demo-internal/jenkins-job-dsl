@@ -26,7 +26,9 @@ pipelineJob('Legacy/monolith-build') {
             strategy {
                 logRotator {
                     numToKeepStr('50')
+                    daysToKeepStr('')
                     artifactNumToKeepStr('10')
+                    artifactDaysToKeepStr('')
                 }
             }
         }
