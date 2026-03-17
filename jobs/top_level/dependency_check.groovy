@@ -3,13 +3,7 @@ pipelineJob('dependency-check') {
     description('Scans all repositories for vulnerable dependencies')
 
     parameters {
-        extendedChoice {
-            name('REPOS')
-            type('PT_CHECKBOX')
-            value('api-dotnet,web-nextjs,operator-go,legacy-monolith-java,mobile-bff-node,data-pipeline-python')
-            defaultValue('api-dotnet,web-nextjs,operator-go')
-            description('Repositories to scan')
-        }
+        stringParam('REPOS', 'api-dotnet,web-nextjs,operator-go', 'Comma-separated list of repos to scan (options: api-dotnet,web-nextjs,operator-go,legacy-monolith-java,mobile-bff-node,data-pipeline-python)')
     }
 
     triggers {
