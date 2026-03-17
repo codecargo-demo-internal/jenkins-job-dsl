@@ -11,14 +11,6 @@ freeStyleJob('Data-Engineering/etl-nightly-run') {
         cron('H 2 * * *')
     }
 
-    // Hardcoded env vars - the data team knows this is bad but "it works"
-    environmentVariables {
-        env('DB_HOST', 'redknot-rds-dev.cluster-abc123.us-east-2.rds.amazonaws.com')
-        env('DB_PORT', '5432')
-        env('DB_NAME', 'analytics')
-        env('S3_BUCKET', 'redknot-data-lake-dev')
-    }
-
     wrappers {
         timestamps()
         timeout {
@@ -28,6 +20,12 @@ freeStyleJob('Data-Engineering/etl-nightly-run') {
 
     steps {
         shell('''
+            # Hardcoded env vars - the data team knows this is bad but "it works"
+            export DB_HOST=redknot-rds-dev.cluster-abc123.us-east-2.rds.amazonaws.com
+            export DB_PORT=5432
+            export DB_NAME=analytics
+            export S3_BUCKET=redknot-data-lake-dev
+
             echo "Starting ETL run for date: ${DATE_OVERRIDE:-$(date -d yesterday +%Y-%m-%d)}"
             echo "Dry run: ${DRY_RUN}"
 
