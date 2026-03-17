@@ -6,11 +6,8 @@ pipelineJob('Legacy/monolith-release') {
         choiceParam('RELEASE_TYPE', ['minor', 'patch'], 'Release type')
     }
 
-    properties {
-        lockableResources {
-            label('release-lock')
-            resourceNumber(1)
-        }
+    throttleConcurrentBuilds {
+        maxTotal(1)
     }
 
     definition {
