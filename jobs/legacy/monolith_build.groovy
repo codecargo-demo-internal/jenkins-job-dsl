@@ -7,7 +7,7 @@ pipelineJob('Legacy/monolith-build') {
             scm {
                 git {
                     remote {
-                        url('https://github.com/codecargo-demo-internal/jenkins-legacy-monolith-java.git')
+                        url('https://bitbucket.org/redknot/monolith.git')
                         credentials('github-pat')
                     }
                     branches('*/main')

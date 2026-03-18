@@ -5,7 +5,7 @@ multibranchPipelineJob('Platform/API/api-multibranch') {
     branchSources {
         git {
             id('api-dotnet-repo')
-            remote('https://github.com/codecargo-demo-internal/jenkins-api-dotnet.git')
+            remote('https://bitbucket.org/redknot/jenkins-api-dotnet.git')
             credentialsId('github-pat')
         }
     }

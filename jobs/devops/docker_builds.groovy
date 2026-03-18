@@ -7,7 +7,7 @@ pipelineJob('DevOps/Docker/build-base-images') {
             scm {
                 git {
                     remote {
-                        url('https://github.com/codecargo-demo-internal/jenkins-infra-tools.git')
+                        url('https://bitbucket.org/redknot/infra-docker-images.git')
                         credentials('github-pat')
                     }
                     branches('*/main')

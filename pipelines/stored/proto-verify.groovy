@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/codecargo-demo-internal/jenkins-api-dotnet.git',
+                git url: 'https://bitbucket.org/redknot/jenkins-api-dotnet.git',
                     credentialsId: 'github-pat',
                     branch: 'main'
             }

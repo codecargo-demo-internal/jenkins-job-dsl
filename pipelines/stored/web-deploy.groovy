@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Image') {
             steps {
-                git url: 'https://github.com/codecargo-demo-internal/jenkins-web-nextjs.git',
+                git url: 'https://bitbucket.org/redknot/jenkins-web-nextjs.git',
                     credentialsId: 'github-pat',
                     branch: 'main'
                 sh """

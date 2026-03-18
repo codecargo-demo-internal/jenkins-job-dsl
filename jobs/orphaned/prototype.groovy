@@ -6,7 +6,7 @@ freeStyleJob('_Archived/prototype-recommender') {
     scm {
         git {
             remote {
-                url('https://github.com/codecargo-demo-internal/jenkins-data-pipeline-python.git')
+                url('https://bitbucket.org/redknot/data-etl-pipeline.git')
                 credentials('github-pat')
             }
             branches('*/experimental/recommender')

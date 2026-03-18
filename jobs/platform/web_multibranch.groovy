@@ -4,7 +4,7 @@ multibranchPipelineJob('Platform/Web/web-multibranch') {
     branchSources {
         git {
             id('web-nextjs-repo')
-            remote('https://github.com/codecargo-demo-internal/jenkins-web-nextjs.git')
+            remote('https://bitbucket.org/redknot/jenkins-web-nextjs.git')
             credentialsId('github-pat')
         }
     }
