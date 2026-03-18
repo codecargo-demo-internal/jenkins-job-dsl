@@ -5,7 +5,7 @@ multibranchPipelineJob('Platform/Operator/operator-multibranch') {
         git {
             id('operator-go-repo')
             remote('https://bitbucket.org/redknot/jenkins-operator-go.git')
-            credentialsId('github-pat')
+            credentialsId('bb-platform-deploy-key')
         }
     }
 

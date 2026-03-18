@@ -9,7 +9,7 @@ freeStyleJob('_Archived/api-build-BACKUP') {
         git {
             remote {
                 url('https://bitbucket.org/redknot/jenkins-api-dotnet.git')
-                credentials('github-pat')
+                credentials('redknot-bb-readonly')
             }
             branches('*/main')
         }

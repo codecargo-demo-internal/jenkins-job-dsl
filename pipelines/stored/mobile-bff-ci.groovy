@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git url: 'https://bitbucket.org/redknot/jenkins-mobile-bff-node.git',
-                    credentialsId: 'github-pat',
+                    credentialsId: 'bitbucket-pat',
                     branch: 'main'
             }
         }

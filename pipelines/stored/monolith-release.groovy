@@ -8,7 +8,7 @@ node {
                 branches: [[name: '*/main']],
                 userRemoteConfigs: [[
                     url: 'https://bitbucket.org/redknot/monolith.git',
-                    credentialsId: 'github-pat'
+                    credentialsId: 'bitbucket-legacy-creds'
                 ]]
             ]
         }

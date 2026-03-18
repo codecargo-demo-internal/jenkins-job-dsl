@@ -14,7 +14,7 @@ pipeline {
                         stage("Scan ${repo}") {
                             dir(repo) {
                                 git url: "https://bitbucket.org/redknot/jenkins-${repo}.git",
-                                    credentialsId: 'github-pat',
+                                    credentialsId: 'bitbucket-pat',
                                     branch: 'main'
 
                                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {

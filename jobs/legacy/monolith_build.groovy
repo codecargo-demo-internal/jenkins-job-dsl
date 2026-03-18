@@ -8,7 +8,7 @@ pipelineJob('Legacy/monolith-build') {
                 git {
                     remote {
                         url('https://bitbucket.org/redknot/monolith.git')
-                        credentials('github-pat')
+                        credentials('bitbucket-legacy-creds')
                     }
                     branches('*/main')
                 }

@@ -8,7 +8,7 @@ pipelineJob('Platform/API/api-service-ci') {
                 git {
                     remote {
                         url('https://bitbucket.org/redknot/jenkins-api-dotnet.git')
-                        credentials('github-pat')
+                        credentials('bitbucket-pat')
                     }
                     branches('*/main')
                 }

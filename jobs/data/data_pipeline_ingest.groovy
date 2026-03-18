@@ -6,7 +6,7 @@ freeStyleJob('Data-Engineering/data-pipeline-ingest') {
         git {
             remote {
                 url('https://bitbucket.org/redknot/data-etl-pipeline.git')
-                credentials('github-pat')
+                credentials('bitbucket-legacy-creds')
             }
             branches('*/main')
         }

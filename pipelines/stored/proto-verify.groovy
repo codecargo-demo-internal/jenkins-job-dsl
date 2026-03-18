@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git url: 'https://bitbucket.org/redknot/jenkins-api-dotnet.git',
-                    credentialsId: 'github-pat',
+                    credentialsId: 'bitbucket-pat',
                     branch: 'main'
             }
         }

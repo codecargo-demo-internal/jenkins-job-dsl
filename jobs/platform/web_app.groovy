@@ -8,7 +8,7 @@ pipelineJob('Platform/Web/web-app-ci') {
                 git {
                     remote {
                         url('https://bitbucket.org/redknot/jenkins-web-nextjs.git')
-                        credentials('github-pat')
+                        credentials('bitbucket-pat')
                     }
                     branches('*/main')
                 }
