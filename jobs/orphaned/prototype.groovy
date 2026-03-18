@@ -7,7 +7,7 @@ freeStyleJob('_Archived/prototype-recommender') {
         git {
             remote {
                 url('https://bitbucket.org/redknot/data-etl-pipeline.git')
-                credentials('github-pat')
+                credentials('redknot-bb-readonly')
             }
             branches('*/experimental/recommender')
         }

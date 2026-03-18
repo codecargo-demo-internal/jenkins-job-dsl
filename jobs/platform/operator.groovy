@@ -8,7 +8,7 @@ pipelineJob('Platform/Operator/operator-ci') {
                 git {
                     remote {
                         url('https://bitbucket.org/redknot/jenkins-operator-go.git')
-                        credentials('github-pat')
+                        credentials('bitbucket-pat')
                     }
                     branches('*/main')
                 }

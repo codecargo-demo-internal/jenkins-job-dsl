@@ -4,7 +4,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 git url: 'https://bitbucket.org/redknot/jenkins-web-nextjs.git',
-                    credentialsId: 'github-pat',
+                    credentialsId: 'bitbucket-pat',
                     branch: 'main'
                 sh """
                     docker build -t 145023098958.dkr.ecr.us-east-2.amazonaws.com/web-app:${params.VERSION ?: env.BUILD_NUMBER} .

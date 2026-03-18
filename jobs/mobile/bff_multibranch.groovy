@@ -8,7 +8,7 @@ multibranchPipelineJob('Mobile/bff-multibranch') {
         git {
             id('mobile-bff-repo')
             remote('https://bitbucket.org/redknot/jenkins-mobile-bff-node.git')
-            credentialsId('github-pat')
+            credentialsId('bitbucket-pat')
         }
     }
 

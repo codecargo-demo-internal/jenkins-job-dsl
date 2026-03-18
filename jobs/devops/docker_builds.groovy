@@ -8,7 +8,7 @@ pipelineJob('DevOps/Docker/build-base-images') {
                 git {
                     remote {
                         url('https://bitbucket.org/redknot/infra-docker-images.git')
-                        credentials('github-pat')
+                        credentials('bitbucket-pat')
                     }
                     branches('*/main')
                 }

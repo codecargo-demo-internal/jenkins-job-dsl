@@ -5,7 +5,7 @@ multibranchPipelineJob('Platform/Web/web-multibranch') {
         git {
             id('web-nextjs-repo')
             remote('https://bitbucket.org/redknot/jenkins-web-nextjs.git')
-            credentialsId('github-pat')
+            credentialsId('bb-platform-deploy-key')
         }
     }
 
