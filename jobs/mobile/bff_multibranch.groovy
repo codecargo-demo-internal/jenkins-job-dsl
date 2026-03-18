@@ -7,7 +7,7 @@ multibranchPipelineJob('Mobile/bff-multibranch') {
     branchSources {
         git {
             id('mobile-bff-repo')
-            remote('https://github.com/codecargo-demo-internal/jenkins-mobile-bff-node.git')
+            remote('https://bitbucket.org/redknot/jenkins-mobile-bff-node.git')
             credentialsId('github-pat')
         }
     }

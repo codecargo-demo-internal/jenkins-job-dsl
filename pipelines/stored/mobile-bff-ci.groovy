@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/codecargo-demo-internal/jenkins-mobile-bff-node.git',
+                git url: 'https://bitbucket.org/redknot/jenkins-mobile-bff-node.git',
                     credentialsId: 'github-pat',
                     branch: 'main'
             }

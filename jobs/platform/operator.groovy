@@ -7,7 +7,7 @@ pipelineJob('Platform/Operator/operator-ci') {
             scm {
                 git {
                     remote {
-                        url('https://github.com/codecargo-demo-internal/jenkins-operator-go.git')
+                        url('https://bitbucket.org/redknot/jenkins-operator-go.git')
                         credentials('github-pat')
                     }
                     branches('*/main')

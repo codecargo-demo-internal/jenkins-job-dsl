@@ -8,7 +8,7 @@ freeStyleJob('_Archived/api-build-BACKUP') {
     scm {
         git {
             remote {
-                url('https://github.com/codecargo-demo-internal/jenkins-api-dotnet.git')
+                url('https://bitbucket.org/redknot/jenkins-api-dotnet.git')
                 credentials('github-pat')
             }
             branches('*/main')

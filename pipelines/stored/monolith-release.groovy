@@ -7,7 +7,7 @@ node {
                 $class: 'GitSCM',
                 branches: [[name: '*/main']],
                 userRemoteConfigs: [[
-                    url: 'https://github.com/codecargo-demo-internal/jenkins-legacy-monolith-java.git',
+                    url: 'https://bitbucket.org/redknot/monolith.git',
                     credentialsId: 'github-pat'
                 ]]
             ]

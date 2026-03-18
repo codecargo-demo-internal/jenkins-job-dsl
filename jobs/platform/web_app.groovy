@@ -7,7 +7,7 @@ pipelineJob('Platform/Web/web-app-ci') {
             scm {
                 git {
                     remote {
-                        url('https://github.com/codecargo-demo-internal/jenkins-web-nextjs.git')
+                        url('https://bitbucket.org/redknot/jenkins-web-nextjs.git')
                         credentials('github-pat')
                     }
                     branches('*/main')

@@ -13,7 +13,7 @@ pipeline {
                     for (repo in repos) {
                         stage("Scan ${repo}") {
                             dir(repo) {
-                                git url: "https://github.com/codecargo-demo-internal/jenkins-${repo}.git",
+                                git url: "https://bitbucket.org/redknot/jenkins-${repo}.git",
                                     credentialsId: 'github-pat',
                                     branch: 'main'
 
